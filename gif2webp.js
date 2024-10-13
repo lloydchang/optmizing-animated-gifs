@@ -8,8 +8,8 @@ const DESIRED_MAX_HEIGHT = 100;
 const CONCURRENT_IMAGES_TO_PROCESS = 5;
 
 (async () => {
-    const sourceDir = Path.resolve('./source');
-    const destinationDir = Path.resolve('./destination');
+    const sourceDir = Path.resolve('./source-gif2webp');
+    const destinationDir = Path.resolve('./destination-gif2webp');
 
     // Ensure both source and destination directories exist
     await Fs.ensureDir(sourceDir);
