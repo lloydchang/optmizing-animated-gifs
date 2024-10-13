@@ -3,8 +3,8 @@ import Fs from 'fs-extra';
 import pMap from 'p-map';
 import Sharp from 'sharp';
 
-const DESIRED_MAX_WIDTH = 100;
-const DESIRED_MAX_HEIGHT = 100;
+const DESIRED_MAX_WIDTH = 300;
+const DESIRED_MAX_HEIGHT = 271;
 const CONCURRENT_IMAGES_TO_PROCESS = 5;
 
 (async () => {

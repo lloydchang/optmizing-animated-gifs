@@ -3,8 +3,8 @@ import Fs from 'fs-extra';
 import pMap from 'p-map';
 import Sharp from 'sharp';
 
-const DESIRED_MAX_WIDTH = 100;
-const DESIRED_MAX_HEIGHT = 100;
+const DESIRED_MAX_WIDTH = 300;
+const DESIRED_MAX_HEIGHT = 271;
 const CONCURRENT_IMAGES_TO_PROCESS = 5;
 
 (async () => {
@@ -58,8 +58,8 @@ const CONCURRENT_IMAGES_TO_PROCESS = 5;
 
         console.log(result); // Log the result for debugging
 
-        // Destination path for the converted file
-        const destinationPath = Path.join(destinationDir, fileName);
+        // Destination path for the converted file with .webp extension
+        const destinationPath = Path.join(destinationDir, fileName.replace(/\.[^/.]+$/, '.webp'));
         await Fs.writeFile(destinationPath, result.data); // Save the converted file
     }, { concurrency: CONCURRENT_IMAGES_TO_PROCESS, stopOnError: false });
 
