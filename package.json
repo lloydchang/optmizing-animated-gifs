@@ -1,0 +1,17 @@
+{
+  "name": "optmizing-animated-gifs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "p-map": "^7.0.2",
+    "sharp": "^0.33.5"
+  }
+}
